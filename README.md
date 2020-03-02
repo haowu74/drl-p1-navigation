@@ -36,5 +36,10 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+Run the cells in the section 4.
+An agent will be trained using double dqn. At the end of the training, a plot will be shown to illustrate the score distribution in all the training episodes.
 
+You are free to adjust the parameters of tau, double, target_update_freq to fine tune the performance in the following code  
+```python
+agent = Agent(state_size=37, action_size=4, seed=0, tau=1, double=True, target_update_freq=1000)
+```
